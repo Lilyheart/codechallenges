@@ -19,4 +19,4 @@ Do not submit solutions as your own.
 - [ ] Add `module.exports = FUNCNAME;` to bottom
 - [ ] Create new test file in applicable language folder
 - [ ] Copy tests from FreeCodeCamp
-- [ ] Commit skeleton files
+- [ ] Commit skeleton files `git commit -m "Add test code for `
