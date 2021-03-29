@@ -1,18 +1,22 @@
-# Project Euler
+# Code Chalelnges
 
 [![connect](https://img.shields.io/static/v1?label=Contact&message=Lily&color=32698E)](https://github.com/Lilyheart)
 [![license](https://img.shields.io/github/license/Lilyheart/projecteuler.svg?maxAge=2592000)](https://github.com/Lilyheart/projecteuler/blob/gh-pages/LICENSE)
 
-This is a repostiory of solutions to [Project Euler](https://projecteuler.net/about) Challenges completed by Lily Romano.  
+This is a repository of solutions to various code challenges completed by Lily Romano.  
 Do not submit solutions as your own.
 
-## Euler 100 Progress
+## Project Euler
+
+This folder is related to solutions for [Project Euler](https://projecteuler.net/about).
+
+### Euler 100 Progress
 
 ![Progress](https://progress-bar.dev/2/?scale=100&width=200&color=32698E)  
 
-## Steps for each problem
+### Steps for each problem
 
-### Setup
+#### Setup
 
 - [ ] Create new file in applicable language folder
 - [ ] Find problem on [Project Euler](https://projecteuler.net/archives)
@@ -24,7 +28,7 @@ Do not submit solutions as your own.
 - [ ] Copy tests from FreeCodeCamp
 - [ ] Commit skeleton files `git commit -m "Add test code for `
 
-### Finish
+#### Finish
 
 - [ ] Code until tests pass
 - [ ] Update README progress bar

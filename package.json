@@ -1,21 +1,21 @@
 {
-  "name": "projecteuler",
+  "name": "codechallenges",
   "version": "1.0.0",
-  "description": "Project Euler Solutions by Lily Romano",
+  "description": "Code Challenge Solutions by Lily Romano",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lilyheart/projecteuler.git"
+    "url": "git+https://github.com/Lilyheart/codechallenges.git"
   },
   "author": "Lily Romano",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/Lilyheart/projecteuler/issues"
+    "url": "https://github.com/Lilyheart/codechallenges/issues"
   },
-  "homepage": "https://github.com/Lilyheart/projecteuler#project-euler",
+  "homepage": "https://github.com/Lilyheart/codechallenges#project-euler",
   "devDependencies": {
     "jest": "^26.6.3"
   }
