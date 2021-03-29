@@ -6,9 +6,24 @@
 
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-function fiboEvenSum(n) {
+function fiboEvenSum(number) {
+  let prev = 0,
+      curr = 1,
+      result = 0;
 
-  return true;
+  while (curr <= number) {
+    let temp = curr;
+
+    // Setup new numbers
+    curr += prev; //1
+    prev = temp; //1
+
+    if (curr % 2 === 0) {
+      result += curr;
+    }
+  }
+
+  return result;
 }
 
 module.exports = fiboEvenSum;

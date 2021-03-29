@@ -8,7 +8,7 @@ Do not submit solutions as your own.
 
 ## Euler 100 Progress
 
-![Progress](https://progress-bar.dev/1/?scale=100&width=200&color=32698E)  
+![Progress](https://progress-bar.dev/2/?scale=100&width=200&color=32698E)  
 
 ## Steps for each problem
 
