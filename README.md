@@ -8,9 +8,12 @@ Do not submit solutions as your own.
 
 ## Euler 100 Progress
 
-![Progress](https://progress-bar.dev/0/?scale=100&width=200&color=32698E)  
+![Progress](https://progress-bar.dev/1/?scale=100&width=200&color=32698E)  
 
 ## Steps for each problem
+
+### Setup
+
 - [ ] Create new file in applicable language folder
 - [ ] Find problem on [Project Euler](https://projecteuler.net/archives)
 - [ ] Add description to new file
@@ -20,3 +23,9 @@ Do not submit solutions as your own.
 - [ ] Create new test file in applicable language folder
 - [ ] Copy tests from FreeCodeCamp
 - [ ] Commit skeleton files `git commit -m "Add test code for `
+
+### Finish
+
+- [ ] Code until tests pass
+- [ ] Update README progress bar
+- [ ] Commit files `git commit -m "Finish and tested code for `
