@@ -6,9 +6,17 @@
 This is a repository of solutions to various code challenges completed by Lily Romano.  
 Do not submit solutions as your own.
 
+## LeetCode
+
+These are challenges posted by [LeetCode](https://leetcode.com/explore/).
+
+While solutions may not be the absolute best in regards to performance, some attempts are made to be efficient.
+
 ## Project Euler
 
 This folder is related to solutions for [Project Euler](https://projecteuler.net/about).
+
+Performance is not a concern while completing these challenges.
 
 ### Euler 100 Progress
 
