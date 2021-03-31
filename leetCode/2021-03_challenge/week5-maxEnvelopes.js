@@ -1,5 +1,5 @@
 /* global module, Set */
-/* eslint-disable no-magic-numbers, func-style*/
+/* eslint-disable no-magic-numbers, func-style, no-ternary, no-plusplus*/
 
 /**
  * @param {number[][]} envelopes e.g. maxEnvelopes([[9,5],[8,4],[6,7],[6,8],[3,5],[1,3]]) = [6,8],[3,5],[1,3]
@@ -7,32 +7,27 @@
  */
 
 var maxEnvelopes = function(envelopes) {
-  let lis,
-      W = 0, //eslint-disable-line id-length
-      H = 1; //eslint-disable-line id-length
+  let lis, max;
 
   //Sort envelopes from smallest[0] and biggest[1]
   envelopes.sort(function(first, second) {
-    if (first[W] > second[W]) {
-      return 1;
-    } else if (first[W] === second[W] && first[H] < second[H]) {
-      return 1;
-    } else {
-      return -1;
-    }
+    return first[0] === second[0] ? second[1] - first[1] : first[0] - second[0];
   });
 
   //Long Increasing Subsequence, LIS
   lis = new Array(envelopes.length).fill(1);
-  for (let i = 1; i < envelopes.length; i++) {//eslint-disable-line no-plusplus
-    for (let j = 0; j < i; j++) {//eslint-disable-line no-plusplus, id-length
-      if (envelopes[i][H] > envelopes[j][H]) {
-        lis[i] = Math.max(lis[i], lis[j] + 1);
+  max = 1;
+  for (let i = 1; i < envelopes.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (envelopes[i][1] > envelopes[j][1]) {
+        lis[i] = lis[i] > lis[j] + 1 ? lis[i] : lis[j] + 1;
+        max = max > lis[i] ? max : lis[i];
       }
     }
   }
 
-  return lis.reduce(function(first, second) {return Math.max(first, second);});
+  // return lis.reduce(function(first, second) {return Math.max(first, second);});
+  return max;
 };
 
 module.exports = maxEnvelopes;
