@@ -20,7 +20,7 @@ Performance is not a concern while completing these challenges.
 
 ### Euler 100 Progress
 
-![Progress](https://progress-bar.dev/5/?scale=100&width=200&color=32698E)  
+![Progress](https://progress-bar.dev/6/?scale=100&width=200&color=32698E)  
 
 ### Steps for each problem
 
