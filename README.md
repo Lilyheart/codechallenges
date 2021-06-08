@@ -14,9 +14,11 @@ While solutions may not be the absolute best in regards to performance, some att
 
 ## Project Euler
 
+![Lily's status on the Project Euler size](https://projecteuler.net/profile/Lilyheart.png)
+
 This folder is related to solutions for [Project Euler](https://projecteuler.net/about).
 
-Performance is not a concern while completing these challenges.
+Performance is of minimal concern while completing these challenges (has to pass FreeCodeCamp's tests).
 
 ### Euler 100 Progress
 
