@@ -1,24 +1,27 @@
 import os
+import re
 
-DAY = 0
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+DAY = int(re.search(r"day_(\d+)\.py", os.path.basename(__file__)).group(1))
 
 answers = {
-    "1": {
-        "test": None,
-        "actual": None
+    "test": {
+        "1": None,
+        "2": None
     },
-    "2": {
-        "test": None,
-        "actual": None
+    "actual": {
+        "1": None,
+        "2": None
     }
 }
 
 def debug(string):
-    # print(string)
+    print(string)
     pass
 
 def testStar(file, star, answer):
-    correctAnswer = answers[star]["test" if "test" in file.split(".")[0] else "actual"]
+    correctAnswer = answers["test" if "test" in file.split(".")[0] else "actual"][star]
     if correctAnswer == None:
         print(f"Star {star} = {answer} (unknown answer) ❔")
     else:
@@ -30,6 +33,8 @@ def code(file):
 
     with open(os.path.join("input", file), "r", encoding="utf-8") as input_values:
         raw_data = [line.strip().split(" ") for line in input_values.read().split("\n")]
+        
+    debug(raw_data)
     
     testStar(file, "1", None)
     testStar(file, "2", None)
