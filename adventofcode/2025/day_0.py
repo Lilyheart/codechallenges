@@ -30,12 +30,9 @@ def code(file):
 
     with open(os.path.join("input", file), "r", encoding="utf-8") as input_values:
         raw_data = [line.strip().split(" ") for line in input_values.read().split("\n")]
-
-    star1 = 0
-    star2 = 0
     
-    testStar(file, "1", star1)
-    testStar(file, "2", star2)
+    testStar(file, "1", None)
+    testStar(file, "2", None)
  
 code(f"{DAY}_test.txt")
 code(f"{DAY}.txt")
