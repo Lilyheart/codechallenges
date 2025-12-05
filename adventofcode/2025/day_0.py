@@ -25,7 +25,7 @@ def testStar(file, star, answer):
     if correctAnswer == None:
         print(f"Star {star} = {answer} (unknown answer) ❔")
     else:
-        print(f"Star {star} = {answer} (should be {correctAnswer}) {"✅" if answer == correctAnswer else "❌"}")
+        print(f"Star {star} = {answer} (should be {correctAnswer}) {"🎄🎄🎄" if answer == correctAnswer else "❌"}")
 
 def code(file):
     
