@@ -12,7 +12,7 @@ answers = {
     },
     "actual": {
         "1": 1598415,
-        "2": None
+        "2": 3812909
     }
 }
 
@@ -32,14 +32,15 @@ def code(file):
     print(f"===== {file} =====")
 
     with open(os.path.join("input", file), "r", encoding="utf-8") as input_values:
-        raw_data = [list(int(item) for item in line.strip().split("x")) for line in input_values.read().split("\n")]
+        raw_data = [list(map(int, line.split("x"))) for line in input_values]
     
     totalPaper = 0
     totalRibbon = 0
     
-    for l, w, h in raw_data:
-        totalPaper += (2*l*w + 2*w*h + 2*h*l + min(l*w, w*h, h*l))
-        totalRibbon += 2 * ((l + w + h) - max(l, w, h))
+    for data in raw_data:
+        l, w, h = sorted(data)
+        totalPaper += 2*l*w + 2*w*h + 2*h*l + l*w
+        totalRibbon += 2 * (l + w)
         totalRibbon += l*w*h
     
     testStar(file, "1", totalPaper)
