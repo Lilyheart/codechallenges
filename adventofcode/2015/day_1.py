@@ -12,7 +12,7 @@ answers = {
     },
     "actual": {
         "1": 232,
-        "2": None
+        "2": 1783
     }
 }
 
@@ -32,7 +32,7 @@ def code(file):
     print(f"===== {file} =====")
 
     with open(os.path.join("input", file), "r", encoding="utf-8") as input_values:
-        raw_data = list(input_values.read())
+        raw_data = input_values.read()
         
     # debug(raw_data)
     
@@ -40,10 +40,10 @@ def code(file):
     position = 0
     dirs = {"(": 1, ")": -1}
     
-    for i in range(len(raw_data)):
-        floor += dirs[raw_data[i]]
+    for i, char in enumerate(raw_data, 1):
+        floor += dirs[char]
         if position == 0 and floor < 0:
-            position = i + 1
+            position = i
     
     testStar(file, "1", floor)
     testStar(file, "2", position)
