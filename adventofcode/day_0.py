@@ -40,4 +40,4 @@ def code(file):
     testStar(file, "2", None)
  
 code(f"{DAY}_test.txt")
-code(f"{DAY}.txt")
+# code(f"{DAY}.txt")
